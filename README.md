@@ -79,6 +79,7 @@ Este é um roteiro básico para o desenvolvimento de uma aplicação web complet
 - [] Desenhe um diagrama de arquitetura para ter uma visão clara de como os componentes se encaixam.
   - [ ] Diagrama de Arquitetura
   - [X] Diagrama de Classes
+    ![Imagem](https://cdn.discordapp.com/attachments/1104077258978754672/1164715632181399662/Modelagem_Classe_Simulado.drawio.png?ex=654438f6&is=6531c3f6&hm=2d1f6258d21a4e8c3342fc14fbfeaefe15a47c39a4b151ed25c392b4a5f9a928&)
 - [ ] Planeje seu modelo de dados no DynamoDB.
 
 ### Configuração do Ambiente
