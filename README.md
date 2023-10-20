@@ -3,18 +3,20 @@
 Este projeto tem como objetivo desenvolver uma aplicação web completa para auxiliar os usuários a praticar seus conhecimentos para a certificação AWS Practitioner. A aplicação será construída usando Java e Spring Boot para a API, React para o frontend e Amazon DynamoDB como banco de dados.
 
 ## Sumário
-- [Características Principais](#Características-Principais)
-- [Roadmap](#Roadmap)
-- [Contribuições](#Contribuições)
-- [Desenvolvimento de Aplicação Web](#Desenvolvimento-de-Aplicação-Web)
-- [Planejamento](#Planejamento)
-- [Configuração do Ambiente](#Configuração-do-Ambiente)
-- [Desenvolvimento Backend](#Desenvolvimento-Backend)
-- [Desenvolvimento Frontend](#Desenvolvimento-Frontend)
-- [Testes](#Testes)
-- [Implantação](#Implantação)
-- [Manutenção e Iteração](#Manutenção-e-Iteração)
-- [Ideias Adicionais](#Ideias-Adicionais)
+
+- [Características Principais] (#Características-Principais)
+
+- [Roadmap](#roadmap)
+- [Contribuições](#contribuições)
+- [Desenvolvimento de Aplicação Web](#desenvolvimento-de-aplicação-web)
+- [Planejamento](#planejamento)
+- [Configuração do Ambiente](#configuração-do-ambiente)
+- [Desenvolvimento Backend](#desenvolvimento-backend)
+- [Desenvolvimento Frontend](#desenvolvimento-frontend)
+- [Testes](#testes)
+- [Implantação](#implantação)
+- [Manutenção e Iteração](#manutenção-e-iteração)
+- [Ideias Adicionais](#ideias-adicionais)
 
 ### Características Principais
 
@@ -44,7 +46,39 @@ Este é um roteiro básico para o desenvolvimento de uma aplicação web complet
 ### Planejamento
 
 - [ ] Defina claramente os requisitos do seu projeto.
-- [ ] Desenhe um diagrama de arquitetura para ter uma visão clara de como os componentes se encaixam.
+  - [X] Quais são os principais recursos que você deseja oferecer aos usuários?
+    O aplicativo permitirá que os usuários pratiquem seus conhecimentos para a certificação AWS Practitioner. Os usuários poderão se cadastrar na plataforma usando tokens. Além disso, a aplicação contará com uma ampla cobertura de testes para garantir a qualidade do código. O código será escrito seguindo as melhores práticas de clean code. Os dados dos usuários serão criptografados para garantir sua segurança.
+
+  - [X] Principais componentes do seu aplicativo?
+    O aplicativo será construído usando Java e Spring Boot para a API, React para o frontend e Amazon DynamoDB como banco de dados.
+
+  - [X] Quais são as principais páginas e componentes do frontend?
+    Página de login, página de registro, página inicial, páginas de conteúdo de estudo, quizes e testes práticos.
+
+  - [X] Quais são os principais modelos de dados que você precisa armazenar?
+    Informações sobre os usuários (como nome de usuário, senha, nome, cpf, ...), bem como informações sobre o conteúdo do curso (como perguntas do quiz, respostas alternativas, reposta correta, ...).
+
+  - [X] Quais são os principais recursos de segurança que você precisa implementar?
+    Tokens para o cadastro do usuário, criptografia dos dados para proteger informações sensíveis como senhas. Proteção contra ataques de injeção SQL (se aplicável) e a garantia de que todas as comunicações entre o cliente e o servidor serão criptografadas usando HTTPS.
+
+  - [X] Quais são os principais endpoints da API?
+  - usuario
+    - POST /usuario/
+    - GET /usuario/{id} (apenas para admin)
+    - PUT /usuario/{id}
+    - DELETE /usuario/{id} (apenas para admin)
+    - GetAll /usuario/ (apenas para admin)
+  - simulado
+    - POST /simulado/
+    - GET /simulado/{id}
+    - PUT /simulado/{id} (apenas para admin)
+    - DELETE /simulado/{id} (apenas para admin)
+    - GetAllbyCurso /simulado/{curso}
+    - GetAll /simulado/ (apenas para admin)
+
+- [] Desenhe um diagrama de arquitetura para ter uma visão clara de como os componentes se encaixam.
+  - [ ] Diagrama de Arquitetura
+  - [X] Diagrama de Classes
 - [ ] Planeje seu modelo de dados no DynamoDB.
 
 ### Configuração do Ambiente
