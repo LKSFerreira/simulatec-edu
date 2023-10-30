@@ -4,8 +4,7 @@ Este projeto tem como objetivo desenvolver uma aplicação web completa para aux
 
 ## Sumário
 
-- [Características Principais] (#Características-Principais)
-
+- [Características Principais](#Características-Principais)
 - [Roadmap](#roadmap)
 - [Contribuições](#contribuições)
 - [Desenvolvimento de Aplicação Web](#desenvolvimento-de-aplicação-web)
