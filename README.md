@@ -1,6 +1,6 @@
 # Projeto de Aplicação Web para estudar e praticar simulado de Certificações
 
-Este projeto tem como objetivo desenvolver uma aplicação web completa para auxiliar os usuários a praticar seus conhecimentos para certificaçãom inicialmente implementaremos a Certificação AWS Practitioner. A aplicação será construída usando Java e Spring Boot para a API, React para o frontend e Amazon DynamoDB como banco de dados.
+Este projeto tem como objetivo desenvolver uma aplicação web completa para auxiliar os usuários a praticar seus conhecimentos para certificação. Inicialmente implementaremos a Certificação AWS Practitioner. A aplicação será construída usando Java e Spring Boot para a API, React para o frontend e Amazon DynamoDB como banco de dados.
 
 ## Sumário
 
