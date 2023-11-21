@@ -45,35 +45,34 @@ Este é um roteiro básico para o desenvolvimento de uma aplicação web complet
 ### Planejamento
 
 - [ ] Defina claramente os requisitos do seu projeto.
-  - [X] Quais são os principais recursos que você deseja oferecer aos usuários?
-        
+
+  - [x] Quais são os principais recursos que você deseja oferecer aos usuários?
+
     O aplicativo permitirá que os usuários pratiquem seus conhecimentos para a certificação AWS Practitioner. Os usuários poderão se cadastrar na plataforma usando tokens. Além disso, a aplicação contará com uma ampla cobertura de testes para garantir a qualidade do código. O código será escrito seguindo as melhores práticas de clean code. Os dados dos usuários serão criptografados para garantir sua segurança.
 
-  - [X] Principais componentes do seu aplicativo?
-        
+  - [x] Principais componentes do seu aplicativo?
+
     O aplicativo será construído usando Java e Spring Boot para a API, React para o frontend e Amazon DynamoDB como banco de dados.
 
-  - [X] Quais são as principais páginas e componentes do frontend?
-        
+  - [x] Quais são as principais páginas e componentes do frontend?
+
     Página de login, página de registro, página inicial, páginas de conteúdo de estudo, quizes e testes práticos.
 
-  - [X] Quais são os principais modelos de dados que você precisa armazenar?
-        
+  - [x] Quais são os principais modelos de dados que você precisa armazenar?
+
     Informações sobre os usuários (como nome de usuário, senha, nome, cpf, ...), bem como informações sobre o conteúdo do curso (como perguntas do quiz, respostas alternativas, reposta correta, ...).
 
-  - [X] Quais são os principais recursos de segurança que você precisa implementar?
-        
+  - [x] Quais são os principais recursos de segurança que você precisa implementar?
+
     Tokens para o cadastro do usuário, criptografia dos dados para proteger informações sensíveis como senhas. Proteção contra ataques de injeção SQL (se aplicável) e a garantia de que todas as comunicações entre o cliente e o servidor serão criptografadas usando HTTPS.
 
-  - [X] Quais são os principais endpoints da API?
-        
+  - [x] Quais são os principais endpoints da API?
   - usuario
     - POST /usuario/
     - GET /usuario/{id} (apenas para admin)
     - PUT /usuario/{id}
     - DELETE /usuario/{id} (apenas para admin)
     - GetAll /usuario/ (apenas para admin)
-      
   - simulado
     - POST /simulado/
     - GET /simulado/{id}
@@ -84,9 +83,8 @@ Este é um roteiro básico para o desenvolvimento de uma aplicação web complet
 
 - [ ] Desenhe um diagrama de arquitetura para ter uma visão clara de como os componentes se encaixam.
   - [ ] Diagrama de Arquitetura
-  - [X] Diagrama de Classes
-        
-    ![Imagem](https://cdn.discordapp.com/attachments/1104077258978754672/1164715632181399662/Modelagem_Classe_Simulado.drawio.png?ex=654438f6&is=6531c3f6&hm=2d1f6258d21a4e8c3342fc14fbfeaefe15a47c39a4b151ed25c392b4a5f9a928&)
+  - [x] Diagrama de Classes
+        ![Imagem](https://cdn.discordapp.com/attachments/1104077258978754672/1164715632181399662/Modelagem_Classe_Simulado.drawio.png?ex=654438f6&is=6531c3f6&hm=2d1f6258d21a4e8c3342fc14fbfeaefe15a47c39a4b151ed25c392b4a5f9a928&)
 - [ ] Planeje seu modelo de dados no DynamoDB.
 
 ### Configuração do Ambiente
