@@ -4,6 +4,13 @@ var tileSize = 16;
 var dropspeed = 6;
 var tiles = 160;
 var x = 0;
+
+window.addEventListener("keydown", function (event) {
+  if (event.code == "F11") {
+    setTimeout(setup, 100);
+  }
+});
+
 function setup() {
   noStroke();
   colorMode(HSB, 360, 100, 1, 0.1);
