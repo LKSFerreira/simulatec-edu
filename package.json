@@ -4,13 +4,14 @@
   "description": "Aplicação para estudar e praticar Certificação AWS Practitioner e outras futuramente.",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run serv-down && npm run serv-up && next dev",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "pg": "docker compose --file infra/compose.yaml up --detach",
-    "pg:down": "docker compose --file infra/compose.yaml down"
+    "serv-up": "docker compose --file infra/compose.yaml up --detach",
+    "serv-down": "docker compose --file infra/compose.yaml down",
+    "serv-stop": "docker compose --file infra/compose.yaml stop"
   },
   "author": "Lucas Ferreira",
   "license": "MIT",
