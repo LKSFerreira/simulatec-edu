@@ -11,6 +11,10 @@ window.addEventListener("keydown", function (event) {
   }
 });
 
+window.addEventListener("resize", function () {
+  mousePressed()
+});
+
 function setup() {
   noStroke();
   colorMode(HSB, 360, 100, 1, 0.1);
